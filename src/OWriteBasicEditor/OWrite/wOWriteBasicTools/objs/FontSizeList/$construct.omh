@@ -1,0 +1,13 @@
+;  build list of font sizes
+Do ivFontSizeList.$define(ivFontSize)
+Do ivFontSizeList.$add('8')
+Do ivFontSizeList.$add('9')
+Do ivFontSizeList.$add('10')
+Do ivFontSizeList.$add('12')
+Do ivFontSizeList.$add('14')
+Do ivFontSizeList.$add('16')
+Do ivFontSizeList.$add('18')
+Do ivFontSizeList.$add('24')
+Do ivFontSizeList.$add('28')
+Do ivFontSizeList.$add('36')
+Do ivFontSizeList.$add('72')

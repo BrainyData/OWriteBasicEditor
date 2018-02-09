@@ -1,0 +1,21 @@
+;  initialization required for OSpell2
+
+;  initialize the spell checker objects
+;  Note: tvOSpellObj and tvOSpellHandler are task variables of this task
+Do tvOSpellObj.$installmenu
+Do tvOSpellHandler.$initialize
+
+;  if we want to store some dictionaries in a shared data file
+;  we must install a handler for loading, saving and list building
+;  in this example, our handler is this task which implements the $memlex... required methods
+;  we must tell both spell checker objects about the handler
+;  NOTE: If you keep the lines below you must implement the code in the followiing methods
+;       ;; to handle the dictionary records in your database
+;       ;; $memlexcreate
+;       ;; $memlexdelete
+;       ;; $memlexsave
+;       ;; $memlexappendlist
+
+;  *** to store dictionaries in your database uncomment the next two lines
+;  Do tvOSpellObj.$setmemlexhandler($cinst)
+;  Do tvOSpellHandler.$setmemlexhandler($cinst)

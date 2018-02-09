@@ -1,0 +1,3 @@
+;  finish OSpell2 and OWrite
+Do method destruct_OWrite
+Do method destruct_OSpell2

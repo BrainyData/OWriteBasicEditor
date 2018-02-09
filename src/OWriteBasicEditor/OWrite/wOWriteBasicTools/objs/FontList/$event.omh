@@ -1,0 +1,6 @@
+On evClick
+	Do method changeFont (pRow.C1)
+On evAfter     ;; Event Parameters - pRow ( Itemreference )
+	If #MODIFIED|#ENTER|#RETURN
+		Do method changeFont (ivFontName)
+	End If

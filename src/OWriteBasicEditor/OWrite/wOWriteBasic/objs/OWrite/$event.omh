@@ -1,0 +1,6 @@
+On evFormatChanged
+	Do refOWriteTools.$redrawTools
+On evStylesChanged
+	Do refOWriteTools.$loadStyleList
+On evContextSpell
+	Do refOWriteTools.$contextMenuSpell(pList,pX,pY)

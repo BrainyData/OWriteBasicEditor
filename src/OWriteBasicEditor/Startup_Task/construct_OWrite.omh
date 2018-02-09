@@ -1,0 +1,13 @@
+;  initialization required for OWrite
+
+;  OWrite includes some string resources that require translation
+;  you can edit the provided font table to translate these strings and load it here
+
+;  load the string table from disk     ;; it is assumed that it is located where this library is
+Do StringTable.$loadstringtable('OWriteStr',con(ivExamplesPath,'OWriteStrings'))
+;  ; set the appropriate column
+Do StringTable.$setcolumn('English')
+;  tell OWrite to load the strings
+Do OWrite.$loadstrings('OWriteStr')
+;  we have finished with the string table, unload it.
+Do StringTable.$unloadstringtable('OWriteStr')

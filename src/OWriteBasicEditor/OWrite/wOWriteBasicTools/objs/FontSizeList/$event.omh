@@ -1,0 +1,9 @@
+On evClick
+	Calculate ivFontSize as pRow.ivFontSize
+	Calculate refOWrite.$curfontsize as ivFontSize
+	Calculate $cinst.$ctarget as refOWrite
+On evAfter     ;; Event Parameters - pRow ( Itemreference )
+	If #MODIFIED|#ENTER|#RETURN
+		Calculate refOWrite.$curfontsize as ivFontSize
+		Calculate $cinst.$ctarget as refOWrite
+	End If

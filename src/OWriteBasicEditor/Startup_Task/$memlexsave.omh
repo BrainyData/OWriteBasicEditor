@@ -1,0 +1,14 @@
+;  the user has added a new word to or edited a dictionary that is stored in the database
+
+;  *** find/select record     ;; DB_DICTIONARY_NAME=pLexName
+;  *** prepare record for editing
+
+Calculate DB_LANGUAGE_ID as pLexLangID
+If DB_WORD_LIST.$line
+	Do DB_WORD_LIST.$merge(pLexWordList,kFalse,kFalse)
+	Do DB_WORD_LIST.$cols[1].$removeduplicates(kTrue,kTrue)
+Else
+	Calculate DB_WORD_LIST as pLexWordList
+End If
+
+;  *** write record to database

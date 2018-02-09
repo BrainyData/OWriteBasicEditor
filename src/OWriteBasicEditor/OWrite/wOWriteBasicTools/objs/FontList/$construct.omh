@@ -1,0 +1,3 @@
+;  build list of fonts
+Do ivFontList.$define(ivFontName,#1)
+Do FontOps.$replistfonts(ivFontList)
