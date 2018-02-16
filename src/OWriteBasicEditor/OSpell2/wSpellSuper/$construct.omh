@@ -1,0 +1,1 @@
+Set reference ivOSpellObj to $root.$libs.OSpell2.$objects.oSpellChecker.$insts.$first().$ref

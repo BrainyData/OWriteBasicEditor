@@ -1,0 +1,20 @@
+;  search the list to make sure the font exists     ;; (allow user to type partial font name and ignore case)
+;  first search based on entire name
+Do ivFontList.$search(upp($ref.C1)=upp(pFontName),kTrue,kFalse,kFalse,kFalse) Returns ivFontList.$line
+If not(ivFontList.$line)
+	;  if that fails, search on partial name
+	Do ivFontList.$search(pos(upp(pFontName),upp($ref.C1))=1,kTrue,kFalse,kFalse,kFalse) Returns ivFontList.$line
+	If not(ivFontList.$line)
+		OK message  {The font '[ivFontName]' does not exist on your system.}
+		Calculate $cinst.$ctarget as refOWrite
+		Calculate ivFontName as refOWrite.$curfont
+		Redraw {FontList}
+		Quit method
+	End If
+End If
+;  always redraw with the fontname that we found
+Calculate ivFontName as ivFontList.C1
+Redraw (Refresh now) {FontList}
+
+Calculate refOWrite.$curfont as ivFontName
+Calculate $cinst.$ctarget as refOWrite

@@ -1,0 +1,4 @@
+;  the user has requested to delete a dictionary
+
+;  *** find/select record     ;; DB_DICTIONARY_NAME=pLexName
+;  *** delete the record from the database

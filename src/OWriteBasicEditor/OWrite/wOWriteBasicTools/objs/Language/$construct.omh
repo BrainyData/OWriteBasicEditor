@@ -1,0 +1,8 @@
+;  make sure spell checker is loaded before we get the language list
+Do tvOSpellObj.$init     ;; initialize the spell checker object
+
+Calculate ivLanguageList as tvOSpellObj.$getlanguagelist
+Do ivLanguageList.$redefine(ivLanguageName)
+
+;  thers is currently no easy way to re-check the entire document
+;  we are thinking about it for the next version of OWrite

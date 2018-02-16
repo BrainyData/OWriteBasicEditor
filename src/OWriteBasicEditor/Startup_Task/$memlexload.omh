@@ -1,0 +1,6 @@
+;  the user has requested to open and use a dictionary that is stored in the database
+
+;  *** find/select record     ;; DB_DICTIONARY_NAME=pLexName
+
+Calculate pLexLangID as DB_LANGUAGE_ID
+Calculate pLexWordList as DB_WORD_LIST
