@@ -1,8 +1,0 @@
-;  the user has created a new dictionary and asked for it to be stored in the database
-
-;  *** prepare for inserting a record
-
-Calculate DB_DICTIONARY_NAME as pLexName
-Calculate DB_LANGUAGE_ID as kSpllLangAny
-
-;  *** write record to database

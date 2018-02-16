@@ -1,3 +1,0 @@
-;  Initialize our formatting tools
-Do refOWriteTools.$loadStyleList
-Do refOWriteTools.$redrawTools

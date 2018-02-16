@@ -1,6 +1,0 @@
-;  update our combo variables
-Calculate ivStyleName as refOWrite.$curstyleName
-Calculate ivFontName as refOWrite.$curfont
-Calculate ivFontSize as refOWrite.$curfontsize
-;  redraw everything
-Do $cinst.$redraw()

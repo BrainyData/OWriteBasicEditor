@@ -1,3 +1,0 @@
-Do ivStyleList.$define(ivStyleName)
-Do refOWrite.$getstylelist(ivStyleList)
-Do ivStyleList.$sort($ref.ivStyleName,kFalse)

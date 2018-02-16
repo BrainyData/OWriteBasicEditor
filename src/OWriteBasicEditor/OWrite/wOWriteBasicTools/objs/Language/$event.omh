@@ -1,4 +1,0 @@
-On evClick
-	Do tvOSpellObj.$setlanguage(pRow.$ident)
-	;  invalidate the document for the spell-check when we change language     ;; CHANGE_15JUL08
-	Do refOWrite.$spell(kWriSpllInvalAll)

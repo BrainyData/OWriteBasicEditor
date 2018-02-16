@@ -1,5 +1,0 @@
-;  keep spell menu up to date
-On evBefore
-	Do $imenus.mSpell.$setmenu(kTrue)
-On evWindowClick
-	Do $imenus.mSpell.$setmenu(kFalse)

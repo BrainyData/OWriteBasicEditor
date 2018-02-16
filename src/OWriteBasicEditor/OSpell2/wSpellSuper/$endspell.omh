@@ -1,4 +1,0 @@
-;  called when spell check for specified field is complete
-;  $endspell(pFieldRef [Item Reference])
-
-;  mpm0008 new method

@@ -1,8 +1,0 @@
-;  the OSpell2 interface requires you to add your database dictionaries to a pick list
-;  the pick list has two columns the name and the dictionary type
-
-;  *** find your first record
-While flag true
-	Do pList.$add(DB_DICTIONARY_NAME,kSpllLexTypeMemory)
-	;  *** find the next record
-End While

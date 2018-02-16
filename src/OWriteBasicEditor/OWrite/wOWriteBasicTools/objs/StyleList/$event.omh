@@ -1,6 +1,0 @@
-On evClick
-	Do method changeStyle (pRow.ivStylename)
-On evAfter     ;; Event Parameters - pRow ( Itemreference )
-	If #MODIFIED|#ENTER|#RETURN
-		Do method changeStyle (ivStyleName)
-	End If

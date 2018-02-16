@@ -1,7 +1,0 @@
-;  termination required for OSpell2
-
-;  remove our spell checker menu
-Do tvOSpellObj.$removemenu
-
-;  unload the spell checker to free up memory     ;; this will close all dictionaries
-Do Spll.$unload()
